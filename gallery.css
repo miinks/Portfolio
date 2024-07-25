@@ -38,9 +38,12 @@ button{
     font-weight: bold;
     cursor: pointer;
 }
+.container{
+    padding: 16px;
+}
 .slider-wrapper{
     position: relative;
-    max-width: 48rem;
+    max-width: 40rem;
     margin: 0 auto;
 
 }
