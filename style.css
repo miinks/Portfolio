@@ -89,7 +89,7 @@ button{
     display: flex;
     align-items: center;
     position: absolute;
-    right: 30px;
+    right: 50px;
     bottom: 50px;
 }
 #previous, #next{
