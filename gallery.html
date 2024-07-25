@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, 
     initial-scale=1.0">
     <title>Minks Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
 </head>
 <body>
-
+   
     <div id="hero">
         <div class="navbar">
             <img src="images/logo.png" class="logo">
@@ -20,61 +20,22 @@
             </div>
         </div>
     </div>
-        
-    <div class="container">
-        <div class="info">
-            <h1>Discover</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi, voluptatibus dicta, laboriosam <br>est quod eos mollitia nam sed saepe quia culpa omnis distinctio. Nesciunt iste mollitia dicta fugit numquam?
-            </p>
-            <input type="text" placeholder="Search">
-        </div>
-    </div>
-<div class="slider">
-    <img src="images/left-arrow.png" id="previous">
-    <div class="preview">
-        <img src="images/small1.png" class="active thumbnail">
-        <img src="images/small2.png" class="thumbnail">
-        <img src="images/small3.png" class="thumbnail">
-        <img src="images/small4.png" class="thumbnail">
-        <img src="images/small5.png" class="thumbnail">
-    </div>
-    <img src="images/right-arrow.png" id="next">
-</div>
- <script>
-    var prev = document.getElementById("prev");
-    var next = document.getElementById("next");
-    var thumbnail = document.getElementsByClassName("thumbnail")
-    var hero = document.getElementById("hero")
-
-    var backgroundImg = new Array(
-        "images/bg1.png",
-        "images/bg2.png",
-        "images/bg3.png",
-        "images/bg4.png",
-        "images/bg5.png",
-    );
-    let i = 0;
-    next.onclick = function(){
-        if(i < 4){
-        hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
-        thumbnail[i+1].classList.add("active");
-        thumbnail[i].classList.remove("active");
-        i++;
-        }
-    }
-    previous.onclick = function(){
-        if(i > 0){
-        hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
-        thumbnail[i-1].classList.add("active");
-        thumbnail[i].classList.remove("active");
-        i--;
-        }
-    }
-
-
- </script>
-
-
-
 </body>
+    <section class="container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img id="slide-1" src="images/bg5.png">
+            <img id="slide-2" src="images/bg2.png">
+            <img id="slide-3" src="images/bg3.png">
+        </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+    </div>
+</section>
+
+
+
 
